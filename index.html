@@ -4,84 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Drum-Kit</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class='notes'>
-        <div class="notes__note">
+   <div class="title">
+       Wciśnij klawisz i zagraj nutę!
+   </div>
+    <div class='notes js-notes'>
+        <div class="notes__note js-note" data-key="65">
             <kbd class='notes__kbd'>
-            
+            A
         </kbd>
            <span class='notes__title'>
-            
+            CLAP
         </span>        </div>
-        <div class="notes__note">
+        <div class="notes__note js-note" data-key="83">
                <kbd class='notes__kbd'>
-            
+            S
         </kbd>
            <span class='notes__title'>
-            
+            HIHAT
         </span>
         </div>
-        <div class="notes__note">    
+        <div class="notes__note js-note" data-key="68">    
            <kbd class='notes__kbd'>
-            
+            D
         </kbd>
-           <span class='notes__title'>
-            
+           <span class='notes__title' >
+            KICK
         </span>
         </div>
-        <div class="notes__note">
+        <div class="notes__note js-note" data-key="70">
                <kbd class='notes__kbd'>
-            
+            F
         </kbd>
            <span class='notes__title'>
-            
+            OPENHAT
         </span>
         </div>
-        <div class="notes__note">
+        <div class="notes__note js-note" data-key="71">
               <kbd class='notes__kbd'>
-            
+            G
         </kbd>
            <span class='notes__title'>
-            
+            BOOM
         </span>
         </div>
-        <div class="notes__note">
+        <div class="notes__note js-note" data-key="72">
                <kbd class='notes__kbd'>
-            
+            H
         </kbd>
            <span class='notes__title'>
-            
+            RIDE
         </span>
         </div>
-        <div class="notes__note">
+        <div class="notes__note js-note" data-key="74">
                <kbd class='notes__kbd'>
-            
+            J
         </kbd>
            <span class='notes__title'>
-            
+            SNARE
         </span>
         </div>
-        <div class="notes__note">
+        <div class="notes__note js-note" data-key="75">
             <kbd class='notes__kbd'>
-            
+            K
         </kbd>
            <span class='notes__title'>
-            
+            TOM
         </span>
         </div>
-        <div class="notes__note">
+        <div class="notes__note js-note" data-key="76">
            <kbd class='notes__kbd'>
-            
+            L
         </kbd>
            <span class='notes__title'>
-            
+            TINK
         </span>
         </div>
     </div>
+    <audio class='js-audio' src="sounds/clap.wav" data-key="65"></audio>
+    <audio class='js-audio' src="sounds/hihat.wav" data-key="83"></audio>
+    <audio class='js-audio' src="sounds/kick.wav" data-key="68"></audio>
+    <audio class='js-audio' src="sounds/openhat.wav" data-key="70"></audio>
+    <audio class='js-audio' src="sounds/boom.wav" data-key="71"></audio>
+    <audio class='js-audio' src="sounds/ride.wav" data-key="72"></audio>
+    <audio class='js-audio' src="sounds/snare.wav" data-key="74"></audio>
+    <audio class='js-audio' src="sounds/tom.wav" data-key="75"></audio>
+    <audio class='js-audio' src="sounds/tink.wav" data-key="76"></audio>
 
+<script src="js/main.js"></script>
 </body>
 
 </html>
